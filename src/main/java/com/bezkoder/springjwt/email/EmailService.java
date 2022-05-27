@@ -33,7 +33,7 @@ public class EmailService implements EmailSender{
                     new MimeMessageHelper(mimeMessage, "utf-8");
             helper.setText(email, true);
             helper.setTo(to);
-            helper.setSubject("Newsletter");
+            helper.setSubject("Nouveau Mail");
             helper.setFrom("hello@amigoscode.com");
             mailSender.send(mimeMessage);
         } catch (MessagingException e) {
